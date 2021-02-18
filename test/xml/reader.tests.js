@@ -77,7 +77,7 @@ it('whitespace between xml declaration and root tag is ignored', function() {
 });
 
 it('error if XML is badly formed', function() {
-  return xmlreader.readString('<bo').then(function(result) {
+  return xmlreader.readString('<bo').then(function() {
     throw new Error('Expected failure');
   }, function(error) {
     assert.ok(error);
