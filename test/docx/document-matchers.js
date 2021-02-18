@@ -1,3 +1,5 @@
+'use strict';
+
 const hamjest = require('hamjest');
 const _ = require('underscore');
 

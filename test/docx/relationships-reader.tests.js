@@ -1,3 +1,5 @@
+'use strict';
+
 const assert = require('assert');
 
 const readRelationships = require('../../lib/docx/relationships-reader').readRelationships;

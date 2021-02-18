@@ -756,7 +756,7 @@ it('can add custom handler for images', function() {
     contentType: 'image/png',
   });
   const converter = new DocumentConverter({
-    convertImage(element, messages) {
+    convertImage(element) {
       return element.read('utf8').then(function(altText) {
         return [ Html.freshElement('img', { alt: altText }) ];
       });
@@ -776,7 +776,7 @@ it('when custom image handler throws error then error is stored in error message
     contentType: 'image/png',
   });
   const converter = new DocumentConverter({
-    convertImage(element, messages) {
+    convertImage() {
       throw error;
     },
   });

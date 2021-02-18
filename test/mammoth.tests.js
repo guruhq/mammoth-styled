@@ -1,3 +1,5 @@
+'use strict';
+
 const assert = require('assert');
 const path = require('path');
 const fs = require('fs');
@@ -421,7 +423,7 @@ it('extractRawText can use .docx files represented by a Buffer', function() {
 
 it('should throw error if file is not a valid docx document', function() {
   const docxPath = path.join(__dirname, 'test-data/empty.zip');
-  return mammoth.convertToHtml({ path: docxPath }).then(function(result) {
+  return mammoth.convertToHtml({ path: docxPath }).then(function() {
     assert.ok(false, 'Expected error');
   }, function(error) {
     assert.strictEqual(error.message, 'Could not find main document part. Are you sure this is a valid .docx file?');

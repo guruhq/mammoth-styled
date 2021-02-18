@@ -1,3 +1,5 @@
+'use strict';
+
 const assert = require('assert');
 
 const createFootnotesReader = require('../../lib/docx/notes-reader').createFootnotesReader;

@@ -1,3 +1,5 @@
+'use strict';
+
 const assert = require('assert');
 const child_process = require('child_process'); // eslint-disable-line camelcase
 const path = require('path');
