@@ -11,8 +11,6 @@ const mammoth = require('../');
 const documents = require('../lib/documents');
 const promises = require('../lib/promises');
 
-const test = require('./test')(module);
-
 
 it('mammoth.images.inline() should be an alias of mammoth.images.imgElement()', function() {
   assert.ok(mammoth.images.inline === mammoth.images.imgElement);

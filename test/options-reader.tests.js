@@ -5,7 +5,6 @@ const _ = require('underscore');
 const optionsReader = require('../lib/options-reader');
 const standardOptions = optionsReader._standardOptions;
 const readOptions = optionsReader.readOptions;
-const test = require('./test')(module);
 
 
 it('standard options are used if options is undefined', function() {

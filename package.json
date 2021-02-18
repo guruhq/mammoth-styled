@@ -48,6 +48,7 @@
     "mammoth": "bin/mammoth"
   },
   "scripts": {
+    "eslint": "eslint ./ --fix",
     "test": "mocha 'test/**/*.tests.js'",
     "test-only": "mocha"
   },

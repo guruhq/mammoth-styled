@@ -7,7 +7,7 @@ const documents = require('../lib/documents');
 const documentToHtml = require('../lib/document-to-html');
 const DocumentConverter = documentToHtml.DocumentConverter;
 const commentAuthorLabel = documentToHtml.commentAuthorLabel;
-const test = require('./test')(module);
+
 const htmlPaths = require('../lib/styles/html-paths');
 const xml = require('../lib/xml');
 const results = require('../lib/results');

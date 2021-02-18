@@ -1,10 +1,11 @@
+'use strict';
+
 const hamjest = require('hamjest');
 const assertThat = hamjest.assertThat;
 const contains = hamjest.contains;
 const hasProperties = hamjest.hasProperties;
 
 const tokenise = require('../../../lib/styles/parser/tokeniser').tokenise;
-const test = require('../../test')(module);
 
 
 it('unknown tokens are tokenised', function() {

@@ -8,7 +8,7 @@ const promises = require('../lib/promises');
 const results = require('../lib/results');
 
 const testing = require('./testing');
-const test = require('./test')(module);
+
 const testData = testing.testData;
 const createFakeDocxFile = testing.createFakeDocxFile;
 

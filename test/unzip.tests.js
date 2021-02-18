@@ -2,7 +2,7 @@ const fs = require('fs');
 const assert = require('assert');
 const path = require('path');
 
-const test = require('./test')(module);
+
 const unzip = require('../lib/unzip');
 const promises = require('../lib/promises');
 

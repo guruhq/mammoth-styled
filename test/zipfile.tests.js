@@ -3,7 +3,7 @@ const assert = require('assert');
 const JSZip = require('jszip');
 
 const zipfile = require('../lib/zipfile');
-const test = require('./test')(module);
+
 
 it('file in zip can be read after being written', function() {
   const zip = emptyZipFile();

@@ -6,7 +6,7 @@ const fs = require('fs');
 const temp = require('temp').track();
 
 const promises = require('../lib/promises');
-const test = require('./test')(module);
+
 const testPath = require('./testing').testPath;
 
 it('HTML is printed to stdout if output file is not set', function() {

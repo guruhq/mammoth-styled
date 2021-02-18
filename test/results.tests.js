@@ -2,7 +2,6 @@ const assert = require('assert');
 
 const results = require('../lib/results');
 const Result = results.Result;
-const test = require('./test')(module);
 
 
 it('Result.combine removes any duplicate messages', function() {
