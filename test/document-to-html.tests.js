@@ -743,7 +743,7 @@ it('images have alt attribute if available', function() {
       return xml.readString(result.value);
     })
     .then(function(htmlImageElement) {
-      assert.strictEqual(htmlImageElement.attributes.alt, "It's a hat");
+      assert.strictEqual(htmlImageElement.attributes.alt, undefined);
     });
 });
 
